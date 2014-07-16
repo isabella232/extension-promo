@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/likeastore/extension-promo/issues"
   },
-  "homepage": "http://extension.likeastore.com"
+  "homepage": "http://extension.likeastore.com",
+  "devDependencies": {
+    "gulp": "^3.8.6"
+  }
 }
