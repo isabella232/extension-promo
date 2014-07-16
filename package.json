@@ -24,6 +24,8 @@
   },
   "homepage": "http://extension.likeastore.com",
   "devDependencies": {
-    "gulp": "^3.8.6"
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.8.6",
+    "gulp-connect": "^2.0.6"
   }
 }
