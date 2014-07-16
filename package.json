@@ -1,0 +1,26 @@
+{
+  "name": "extension-promo",
+  "version": "0.0.0",
+  "description": "https://likeastore.com extension promo page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/likeastore/extension-promo.git"
+  },
+  "keywords": [
+    "likeastore",
+    "extension",
+    "chrome",
+    "firefox",
+    "safari"
+  ],
+  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/likeastore/extension-promo/issues"
+  },
+  "homepage": "http://extension.likeastore.com"
+}
