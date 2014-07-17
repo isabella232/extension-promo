@@ -18,14 +18,21 @@
     "safari"
   ],
   "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
-  "license": "BSD",
+  "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/likeastore/extension-promo/issues"
   },
   "homepage": "http://extension.likeastore.com",
   "devDependencies": {
     "coffee-script": "^1.7.1",
+    "coffeeify": "^0.6.0",
+    "dookie-css": "^0.1.6",
     "gulp": "^3.8.6",
-    "gulp-connect": "^2.0.6"
+    "gulp-browserify": "^0.5.0",
+    "gulp-connect": "^2.0.6",
+    "gulp-hamlet-compile": "0.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-stylus": "^1.0.2",
+    "gulp-uglifyjs": "^0.4.2"
   }
 }
