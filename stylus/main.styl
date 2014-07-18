@@ -1,14 +1,22 @@
 reset()
 base-classes()
+border-box()
 
-*
-	box-sizing border-box
+// settings
+font = unquote('Helvetica Neue, Helvetica, Arial, sans-serif')
+img-path = unquote('../img/')
 
 body
-	min-height 0
-	background-image url(http://thefoxisblack.com/desktop-wallpaper/denise-nouvion-wallpapers-4-1440x900.jpg)
-	background-position 50% 50%
-	background-size cover
+	font-family font
+	-webkit-font-smoothing antialiased
+
+.cover
+	padding 100px 10px
+	color #fff
+	text-align center
+	background-color #424242
+	background-image url('http://static.tumblr.com/5769723044626a13c7a492d55485bc5a/3zmswwt/ARKmyechb/tumblr_static_layer_3_copy.jpg')
 	background-repeat no-repeat
-	background-attachment fixed
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-size cover
+	color #ffffff
+
