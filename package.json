@@ -23,6 +23,12 @@
     "url": "https://github.com/likeastore/extension-promo/issues"
   },
   "homepage": "http://extension.likeastore.com",
+  "dependencies": {
+    "hamlet-cli": "^0.6.0-pre.10",
+    "hamlet-runtime": "^0.6.0-pre.11",
+    "o_0": "^0.2.0",
+    "underscore": "^1.6.0"
+  },
   "devDependencies": {
     "coffee-script": "^1.7.1",
     "coffeeify": "^0.6.0",
@@ -30,6 +36,7 @@
     "gulp": "^3.8.6",
     "gulp-browserify": "^0.5.0",
     "gulp-connect": "^2.0.6",
+    "gulp-uglifyjs": "^0.4.2",
     "gulp-hamlet-compile": "0.1.0",
     "gulp-rename": "^1.2.0",
     "gulp-stylus": "^1.0.2",

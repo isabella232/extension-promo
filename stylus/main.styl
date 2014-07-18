@@ -4,7 +4,6 @@ border-box()
 
 // settings
 font = unquote('Helvetica Neue, Helvetica, Arial, sans-serif')
-img-path = unquote('../img/')
 
 body
 	font-family font
@@ -20,3 +19,58 @@ body
 	background-size cover
 	color #ffffff
 
+.g-page
+	background #fff
+	size: 600px 400px
+	margin 100px auto
+	text-align center
+	box-shadow inset 0px 0px 1px 0px #999
+	position relative
+	border-radius 0 0 3px 3px
+	&:before
+		block()
+		background #111
+		content ''
+		relative top -26px
+		height 26px
+		border-radius: 3px 3px 0 0
+	.g-ctrl
+		background rgba(255,255,255,0.2)
+		absolute top -17px
+		size 8px
+		border-radius 100%
+		&.one
+			left 9px
+		&.two
+			left 22px
+		&.three
+			left 35px
+	.g-logo
+		width 120px
+		margin 20px auto 15px
+		opacity .9
+	.g-input
+		inline-block()
+		border 1px solid #ddd
+		color #555
+		font-size 12px
+		padding 6px 10px
+		size 65% 30px
+		margin-left 14%
+		outline none
+		border-radius 2px
+	.g-button
+		inline-block()
+		size 40px 30px
+		outline none
+		background #4285f4
+		background linear-gradient(top, #4387fd, #4683ea)
+		margin-left -5px
+		user-select none
+		border-radius 0 2px 2px 0
+		.g-search-icon
+			inline-block()
+			background-image url('/img/search.png')
+			background-size 100%
+			margin -2px
+			size 15px
