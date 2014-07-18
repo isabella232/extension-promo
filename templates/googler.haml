@@ -5,6 +5,7 @@
 
   %img(src="/img/googler.png" class="g-logo")
   .center.clearfix
-    %input.g-input.left(type="text" @value)
+    .g-input.left
+      %span.g-cursor= @value
     %button.g-button.left
       %span.g-search-icon

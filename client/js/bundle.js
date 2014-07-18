@@ -35,7 +35,7 @@ exports.init = function() {
   var view;
   view = document.getElementById('googler');
   view.appendChild(googlerTemplate(model));
-  return model.type('Your text that will be printed!');
+  return model.type('Search request for something you have liked before...');
 };
 
 
@@ -495,10 +495,12 @@ module.exports = function(data) {
     __runtime.pop();
     __runtime.push(document.createElement("div"));
     __runtime.classes("center", "clearfix");
-    __runtime.push(document.createElement("input"));
+    __runtime.push(document.createElement("div"));
     __runtime.classes("g-input", "left");
-    __runtime.attribute("type", "text");
-    __runtime.attribute("value", this.value);
+    __runtime.push(document.createElement("span"));
+    __runtime.classes("g-cursor");
+    __runtime.text(this.value);
+    __runtime.pop();
     __runtime.pop();
     __runtime.push(document.createElement("button"));
     __runtime.classes("g-button", "left");

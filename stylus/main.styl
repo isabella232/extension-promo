@@ -46,19 +46,25 @@ body
 		&.three
 			left 35px
 	.g-logo
-		width 120px
-		margin 20px auto 15px
+		width 150px
+		margin 30px auto 15px
 		opacity .9
 	.g-input
 		inline-block()
 		border 1px solid #ddd
-		color #555
+		color #434343
 		font-size 12px
-		padding 6px 10px
+		padding 7px 10px
 		size 65% 30px
 		margin-left 14%
 		outline none
+		cursor default
+		text-align left
 		border-radius 2px
+		.g-cursor
+			padding-right 1px
+			border-right 1px solid
+			animation blink-caret .5s step-end infinite alternate
 	.g-button
 		inline-block()
 		size 40px 30px
@@ -74,3 +80,7 @@ body
 			background-size 100%
 			margin -2px
 			size 15px
+
+@keyframes blink-caret
+	50%
+		border-color transparent

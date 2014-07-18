@@ -14,14 +14,7 @@ model =
 				@type text, n
 			, 100
 
-# dodo = ->
-# 	setInterval () =>
-# 		+model.num+1
-# 		console.log model.num()
-# 	, 1000
-
 exports.init = ->
-	# dodo()
 	view = document.getElementById 'googler'
 	view.appendChild googlerTemplate(model)
-	model.type 'Your text that will be printed!'
+	model.type 'Search request for something you have liked before...'
