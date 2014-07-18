@@ -14,8 +14,9 @@ gulp.task 'connect', ->
 	connect.server root: './client', port: port
 
 gulp.task 'watch', ->
-	gulp.start ['styles', 'server']
+	gulp.start ['build', 'server']
 	gulp.watch ['./stylus/**/*.styl'], ['styles']
 
 gulp.task 'server', ['connect']
 gulp.task 'build', ['styles']
+gulp.task 'default', ['watch']
