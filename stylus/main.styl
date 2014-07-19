@@ -22,7 +22,7 @@ body
 // google browser
 .g-page
 	background #fff
-	size: 600px 400px
+	size: 650px 430px
 	margin 100px auto
 	text-align center
 	box-shadow inset 0px 0px 1px 0px #999
@@ -42,19 +42,15 @@ body
 		size 8px
 		border-radius 100%
 		&.one
-			//background #df3f3f
 			left 9px
 		&.two
-			//background #f1c40f
 			left 22px
 		&.three
-			//background #57ad68
 			left 35px
 	.g-logo
 		width 150px
 		margin 75px auto 15px
 		opacity .9
-		//transition all 1s ease
 	.g-input
 		inline-block()
 		border 1px solid #ddd
@@ -100,15 +96,27 @@ body
 			background linear-gradient(top, #3c7ae4, #3f76d3)
 	&.relayout
 		.g-logo
-			margin -14px 0 0 -505px
+			margin -14px 0 0 -550px
 			width 80px
 		.g-box
-			margin -32px 0 0 10px
+			margin -32px 0 0 5px
+		.ls-results
+			block()
 	.g-results
 		width 60%
+		float left
 		text-align left
-		margin 15px 0 0 14px
+		margin 15px 0 0 15px
 		overflow hidden
+	.ls-results
+		display none
+		width 35%
+		float right
+		text-align left
+		margin 30px 16px 0 0
+		padding 6px 15px
+		box-shadow rgba(0, 0, 0, 0.2) 0px 1px 4px
+	.g-results, .ls-results
 		.g-item
 			margin 0 0 10px
 			font-size 12px
@@ -120,8 +128,14 @@ body
 			.g-item-link
 				color #006621
 				margin 0 0 3px
+				text-overflow 100%
 			.g-item-desc
 				color #333
+	.ls-results
+		h3
+			font-size 13px !important
+			line-height 15px
+			margin-bottom 3px !important
 
 @keyframes blink-caret
 	50%

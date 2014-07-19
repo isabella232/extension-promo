@@ -16,3 +16,11 @@
         %h3= @title
         .g-item-link= @link
         .g-item-desc= @text
+
+  .ls-results.animated.bounceInDown
+    %img(src="/img/header-logo.png" width="100%")
+    -each @likeastoreResults, ->
+      .g-item
+        %h3= @title
+        .g-item-link= @link
+        .g-item-desc= @text

@@ -22,3 +22,11 @@ exports.googleResults = [
 		text: "or call 1-877-920-DODO | Mon-Fri 9-5 PST. |Newsletter Signup. 0 items · Best iPad Cases & Covers for iPad Air, Mini & more ..."
 	}
 ]
+
+exports.likeastoreResults = [
+	{
+		title: "A curated list of awesome Machine Learning..."
+		link: "https://github.com/josephmisiti/awesome-machine-learning"
+		text: "A curated list of awesome Machine Learning frameworks, libraries and software."
+	}
+]

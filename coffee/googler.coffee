@@ -8,25 +8,27 @@ model =
 	value: Observable ''
 	state: Observable 'typing'
 	googleResults: Observable []
+	likeastoreResults: Observable []
 
 	type: (text, n = 0) ->
 		if n < text.length
 			n++
 
 			@value text.substring(0, n)
-			setTimeout =>
+			setTimeout (=>
 				@type text, n
-			, 100
+			), 100
 		else
-			setTimeout =>
+			setTimeout (=>
 				@state 'highlight'
 				@relayout()
-			, 1000
+			), 1000
 	relayout: ->
-		setTimeout =>
+		setTimeout (=>
 			@state 'relayout'
 			@googleResults searchData.googleResults
-		, 200
+			@likeastoreResults searchData.likeastoreResults
+		), 200
 
 exports.init = ->
 	view = document.getElementById 'googler'
