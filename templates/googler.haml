@@ -9,3 +9,10 @@
       %span.g-cursor= @value
     %button.g-button.left
       %span.g-search-icon
+
+  .g-results
+    -each @googleResults, ->
+      .g-item
+        %h3= @title
+        .g-item-link= @link
+        .g-item-desc= @text

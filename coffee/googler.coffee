@@ -1,11 +1,13 @@
 # interactive google search browser widget
 
-googlerTemplate = require '../templates/googler'
 Observable = require 'o_0'
+googlerTemplate = require '../templates/googler'
+searchData = require './searchData'
 
 model =
 	value: Observable ''
 	state: Observable 'typing'
+	googleResults: Observable []
 
 	type: (text, n = 0) ->
 		if n < text.length
@@ -23,6 +25,7 @@ model =
 	relayout: ->
 		setTimeout =>
 			@state 'relayout'
+			@googleResults searchData.googleResults
 		, 200
 
 exports.init = ->

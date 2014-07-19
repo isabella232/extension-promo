@@ -28,6 +28,7 @@ body
 	box-shadow inset 0px 0px 1px 0px #999
 	position relative
 	border-radius 0 0 3px 3px
+	cursor default
 	&:before
 		block()
 		background #111
@@ -41,10 +42,13 @@ body
 		size 8px
 		border-radius 100%
 		&.one
+			//background #df3f3f
 			left 9px
 		&.two
+			//background #f1c40f
 			left 22px
 		&.three
+			//background #57ad68
 			left 35px
 	.g-logo
 		width 150px
@@ -54,7 +58,7 @@ body
 	.g-input
 		inline-block()
 		border 1px solid #ddd
-		color #333
+		color #222
 		font-size 12px
 		padding 7px 10px
 		size 65% 30px
@@ -100,6 +104,24 @@ body
 			width 80px
 		.g-box
 			margin -32px 0 0 10px
+	.g-results
+		width 60%
+		text-align left
+		margin 15px 0 0 14px
+		overflow hidden
+		.g-item
+			margin 0 0 10px
+			font-size 12px
+			h3
+				color #1A52A5
+				font-size 14px
+				font-weight bold
+				margin 0 0 1px
+			.g-item-link
+				color #006621
+				margin 0 0 3px
+			.g-item-desc
+				color #333
 
 @keyframes blink-caret
 	50%
