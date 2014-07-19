@@ -1,10 +1,10 @@
-.g-page
+.g-page(class=@state)
   .g-ctrl.one
   .g-ctrl.two
   .g-ctrl.three
 
-  %img(src="/img/googler.png" class="g-logo")
-  .center.clearfix
+  %img.g-logo(src="/img/googler.png")
+  .g-box.clearfix
     .g-input.left
       %span.g-cursor= @value
     %button.g-button.left
