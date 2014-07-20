@@ -17,9 +17,14 @@ exports.googleResults = [
 		text: "The latest from The Dodo (@dodo). For the love of animals. Sign up at http://TheDodo.com. New York, NY."
 	}
 	{
-		title: "DODOcase: iPad Cases & Covers for iPad Air, Mini & more"
+		title: "DODOcase: iPad Cases & Covers for iPad Air"
 		link: "www.dodocase.com/"
 		text: "or call 1-877-920-DODO | Mon-Fri 9-5 PST. |Newsletter Signup. 0 items · Best iPad Cases & Covers for iPad Air, Mini & more ..."
+	}
+	{
+		title: "Dodo Bird - Bagheera"
+		link: "www.bagheera.com/inthewild/ext_dodobird.htm"
+		text: "The dodo bird inhabited the island of Mauritius in the Indian Ocean, where it lived undisturbed for so long that it lost its need and ability to fly. It lived and nested ..."
 	}
 ]
 
@@ -28,5 +33,6 @@ exports.likeastoreResults = [
 		title: "A curated list of awesome Machine Learning..."
 		link: "https://github.com/josephmisiti/awesome-machine-learning"
 		text: "A curated list of awesome Machine Learning frameworks, libraries and software."
+		type: "github"
 	}
 ]

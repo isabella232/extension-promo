@@ -9,6 +9,9 @@
       %span.g-cursor= @value
     %button.g-button.left
       %span.g-search-icon
+  .g-liky
+    %a(href="#")= "Google Search"
+    %a(href="https://likeastore.com/pulse")= "I'm Feeling Laiky"
 
   .g-results
     -each @googleResults, ->
@@ -18,9 +21,10 @@
         .g-item-desc= @text
 
   .ls-results.animated.bounceInDown
-    %img(src="/img/header-logo.png" width="100%")
+    %img.ls-header-logo(src="/img/header-logo.png" width="100%")
     -each @likeastoreResults, ->
       .g-item
+        %img.ls-icon(src="/img/#{@type}.png" width="12")
         %h3= @title
         .g-item-link= @link
         .g-item-desc= @text
