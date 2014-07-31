@@ -24,6 +24,7 @@
   },
   "homepage": "http://extension.likeastore.com",
   "dependencies": {
+    "dookie-css": "^0.1.10",
     "hamlet-cli": "^0.6.0-pre.10",
     "hamlet-runtime": "^0.6.0-pre.11",
     "o_0": "^0.2.0",
@@ -39,7 +40,6 @@
     "gulp-uglifyjs": "^0.4.2",
     "gulp-hamlet-compile": "0.1.0",
     "gulp-rename": "^1.2.0",
-    "gulp-stylus": "^1.0.2",
-    "gulp-uglifyjs": "^0.4.2"
+    "gulp-stylus": "^1.0.2"
   }
 }

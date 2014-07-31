@@ -1,6 +1,7 @@
 reset()
 base-classes()
 border-box()
+text-selection(#56c7aa)
 
 // settings
 font = unquote('Helvetica Neue, Helvetica, Arial, sans-serif')
@@ -14,7 +15,7 @@ body
 	color #fff
 	text-align center
 	background-color #424242
-	background-image url('http://static.tumblr.com/5769723044626a13c7a492d55485bc5a/3zmswwt/ARKmyechb/tumblr_static_layer_3_copy.jpg')
+	background-image url('http//static.tumblr.com/5769723044626a13c7a492d55485bc5a/3zmswwt/ARKmyechb/tumblr_static_layer_3_copy.jpg')
 	background-repeat no-repeat
 	background-size cover
 	color #ffffff
@@ -22,7 +23,7 @@ body
 // google browser
 .g-page
 	background #fff
-	size: 700px 450px
+	size 700px 450px
 	margin 100px auto
 	text-align center
 	box-shadow inset 0px 0px 1px 0px #999
@@ -35,7 +36,7 @@ body
 		content ''
 		relative top -26px
 		height 26px
-		border-radius: 3px 3px 0 0
+		border-radius 3px 3px 0 0
 	.g-ctrl
 		background rgba(255,255,255,0.2)
 		absolute top -17px
@@ -82,7 +83,7 @@ body
 			margin 0 auto
 			size 15px
 	.g-liky a
-			display none
+			inline-block()
 			border 1px solid #dcdcdc
 			border-color rgba(0, 0, 0, .1)
 			background #f5f5f5
@@ -96,6 +97,7 @@ body
 			margin 20px 5px
 			border-radius 2px
 			cursor default
+			transition all 1s ease
 	&.typing
 		.g-input
 			border-color #4285f4
@@ -103,8 +105,6 @@ body
 			padding-right 1px
 			border-right 1px solid
 			animation blink-caret .5s step-end infinite alternate
-		.g-liky a
-			inline-block()
 	&.highlight
 		.g-button
 			border 1px solid transparent
@@ -119,6 +119,8 @@ body
 			margin -32px 0 0 5px
 		.ls-results
 			block()
+		.g-liky a
+			display none
 	.g-results
 		size 55% 370px
 		float left
@@ -161,7 +163,39 @@ body
 			float left
 			margin 1px 4px 0 0
 
+.animate
+	animation-duration 1s
+	animation-fill-mode both
+.bounceInDown
+	animation-name bounceInDown
+.bounceIn
+	animation-name bounceIn
+
 @keyframes blink-caret
 	50%
 		border-color transparent
 
+@keyframes bounceIn
+	0%
+		opacity 0
+		transform scale(.3)
+	50%
+		opacity 1
+		transform scale(1.05)
+	70%
+		transform scale(.9)
+	100%
+		opacity 1
+		transform scale(1)
+
+@keyframes bounceInDown
+	0%
+		opacity 0
+		transform translateY(-2000px)
+	60%
+		opacity 1
+		transform translateY(30px)
+	80%
+		transform translateY(-10px)
+	100%
+		transform translateY(0)

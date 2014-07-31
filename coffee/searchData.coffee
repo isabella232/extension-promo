@@ -30,7 +30,7 @@ exports.googleResults = [
 
 exports.likeastoreResults = [
 	{
-		title: "A curated list of awesome Machine Learning..."
+		title: "List of awesome Machine Learning..."
 		link: "https://github.com/josephmisiti/awesome-machine-learning"
 		text: "A curated list of awesome Machine Learning frameworks, libraries and software."
 		type: "github"
