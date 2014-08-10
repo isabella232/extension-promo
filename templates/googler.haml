@@ -7,8 +7,10 @@
     %img.hero(src="/img/googly.png")
     .text= "Search your favorites in Google."
     .buttons
-      %a.cta.green(href="#link-to-extension")= "Install extension"
-      %a.cta.pink(href="#")= "How it works?"
+      %a.cta.green(click=@installExtension)= "Install extension"
+      %a.cta.pink(click=@startMovie)= "How it works?"
+
+  .spotlight
 
   %img.g-logo(src="/img/googler.png")
   .g-box.clearfix

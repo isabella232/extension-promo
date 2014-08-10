@@ -6,11 +6,18 @@ searchData = require './searchData'
 
 model =
 	value: Observable ''
-	state: Observable 'typing'
+	state: Observable 'steel'
 	googleResults: Observable []
 	likeastoreResults: Observable []
 
+	startMovie: ->
+		@type 'Search request for something you have liked before...'
+
+	installExtension: ->
+		console.log 'check browser and go to download page'
+
 	type: (text, n = 0) ->
+		@state 'typing'
 		if n < text.length
 			n++
 
@@ -33,4 +40,3 @@ model =
 exports.init = ->
 	view = document.getElementById 'googler'
 	view.appendChild googlerTemplate(model)
-	model.type 'Search request for something you have liked before...'

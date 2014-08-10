@@ -17,13 +17,20 @@ searchData = require('./searchData');
 
 model = {
   value: Observable(''),
-  state: Observable('typing'),
+  state: Observable('steel'),
   googleResults: Observable([]),
   likeastoreResults: Observable([]),
+  startMovie: function() {
+    return this.type('Search request for something you have liked before...');
+  },
+  installExtension: function() {
+    return console.log('check browser and go to download page');
+  },
   type: function(text, n) {
     if (n == null) {
       n = 0;
     }
+    this.state('typing');
     if (n < text.length) {
       n++;
       this.value(text.substring(0, n));
@@ -55,8 +62,7 @@ model = {
 exports.init = function() {
   var view;
   view = document.getElementById('googler');
-  view.appendChild(googlerTemplate(model));
-  return model.type('Search request for something you have liked before...');
+  return view.appendChild(googlerTemplate(model));
 };
 
 
@@ -559,15 +565,18 @@ module.exports = function(data) {
     __runtime.classes("buttons");
     __runtime.push(document.createElement("a"));
     __runtime.classes("cta", "green");
-    __runtime.attribute("href", "#link-to-extension");
+    __runtime.attribute("click", this.installExtension);
     __runtime.text("Install extension");
     __runtime.pop();
     __runtime.push(document.createElement("a"));
     __runtime.classes("cta", "pink");
-    __runtime.attribute("href", "#");
+    __runtime.attribute("click", this.startMovie);
     __runtime.text("How it works?");
     __runtime.pop();
     __runtime.pop();
+    __runtime.pop();
+    __runtime.push(document.createElement("div"));
+    __runtime.classes("spotlight");
     __runtime.pop();
     __runtime.push(document.createElement("img"));
     __runtime.classes("g-logo");
